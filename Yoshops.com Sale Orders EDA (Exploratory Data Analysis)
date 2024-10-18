@@ -1,0 +1,75 @@
+# Yoshops.com Sale Orders EDA (Exploratory Data Analysis)
+This project provides a comprehensive Exploratory Data Analysis (EDA) on Yoshops.com Sale Orders data. 
+The program is designed to generate visual reports and export them in both PDF and Excel formats based on user inputs. 
+These reports cover various aspects such as customer reviews, payment methods, top consumer regions, and sales performance over time.
+
+## Features
+- **Interactive User Input**: Choose from 10 different types of analyses to explore various aspects of the sales data.
+- **Visual Reports**: Generate visual reports in the form of bar charts, line graphs, and other visualizations.
+- **Export Reports**: Save the reports as PDFs and Excel files for further analysis or sharing.
+
+## Usage
+To start the analysis:
+1. Ensure that the required datasets (`orders_2016-2020_Dataset.csv` and `review_dataset.csv`) are in the appropriate location.
+2. Run the Python script:
+    python task2.py
+3. Enter the number corresponding to the analysis you'd like to see (1-10).
+4. The analysis will be displayed and reports will be saved automatically in both PDF and Excel formats.
+
+### Example
+If you want to analyze customer reviews, enter `1` when prompted: Enter the number to see the analysis of your choice: 1
+The program will generate a bar chart showing the distribution of reviews and save it as a PDF and Excel report.
+
+## Analysis Options
+The program provides the following 10 types of analyses:
+
+1. **Analysis of Reviews Given by Customers**  
+   Visualize customer review distribution (e.g., positive, neutral, negative).
+
+2. **Analysis of Different Payment Methods Used by Customers**  
+   Explore the distribution of payment methods (e.g., credit card, debit card, cash on delivery).
+
+3. **Analysis of Top Consumer States of India**  
+   Identify the top states where most orders were placed.
+
+4. **Analysis of Top Consumer Cities of India**  
+   Identify the top cities where most orders were placed.
+
+5. **Analysis of Top Selling Product Categories**  
+   Explore the most popular product categories.
+
+6. **Analysis of Reviews for All Product Categories**  
+   Visualize the distribution of reviews for each product category.
+
+7. **Analysis of Number of Orders Per Month Per Year**  
+   Analyze the trends in the number of orders placed across different months and years.
+
+8. **Analysis of Reviews for Number of Orders Per Month Per Year**  
+   Examine the relationship between the number of orders and customer reviews over time.
+
+9. **Analysis of Number of Orders Across Parts of a Day**  
+   Explore when customers are placing orders during the day (morning, afternoon, evening, night).
+
+10. **Full Report**  
+   Generate a comprehensive report that includes all of the above analyses.
+
+## Data
+Ensure the following CSV datasets are available before running the script:
+1. `orders_2016-2020_Dataset.csv`: Contains order data including `Payment Status`, `Shipping State`, `Shipping City`, `Order Date`, `LineItem Name`, etc.
+2. `review_dataset.csv`: Contains customer reviews data including `stars`, `category`, and more.
+
+## Requirements
+This project requires the following Python libraries:
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `fpdf`
+
+To install the dependencies, use: pip install -r requirements.txt
+
+## Contributing
+We welcome contributions! If you'd like to add features or fix bugs, please follow these steps:
+1. Fork the repository.
+2. Create a new branch.
+3. Commit your changes.
+4. Open a pull request.
